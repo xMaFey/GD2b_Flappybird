@@ -22,4 +22,9 @@ public class player : MonoBehaviour
             rigidbody.velocity = Vector2.up * velocity;
         }
     }
+
+    private void OnCollisionEnter2D(Collision2D other){
+        isDead = true;
+        
+    }
 }
